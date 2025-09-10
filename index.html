@@ -283,33 +283,47 @@
             color: #000;
             transform: scale(1.05);
         }
-        /* Imagem muito maior sem quadrado */
-        .hero-image-container {
+        /* Mobile Mockup - Simulação de aplicativo em um celular */
+        .hero-phone {
             position: relative;
             display: flex;
             justify-content: center;
             margin-top: 2rem;
-            max-width: 900px; /* Aumentado significativamente */
-            margin-left: auto;
-            margin-right: auto;
         }
-        .hero-image-wrapper {
+        .phone-container {
+            background: linear-gradient(135deg, #374151, #111827);
+            padding: 1rem;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: rotate(12deg);
             transition: transform 0.5s;
-            max-width: 100%;
-            overflow: visible; /* Garante que a imagem não seja cortada */
+            max-width: 280px;
         }
-        .hero-image-wrapper:hover {
+        .phone-container:hover {
             transform: rotate(6deg);
         }
-        .hero-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 16px; /* Mantém bordas arredondadas na imagem */
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* Mantém sombra para destaque */
+        .phone-screen {
+            background: #000;
+            border-radius: 16px;
+            padding: 8px;
         }
-        /* STREAMING LOGOS SECTION - Seção com logos de streaming */
+        .phone-content {
+            background: #000;
+            border-radius: 12px;
+            height: 400px;
+            width: 240px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        /* STREAMING LOGOS SECTION - Seção com logos de streaming em animação contínua */
         .streaming-section {
             padding: 4rem 0;
             background: linear-gradient(180deg, #000, #111827);
@@ -902,8 +916,12 @@
                 min-width: 100px;
                 padding: 0.5rem;
             }
-            .hero-image-container {
-                max-width: 500px; /* Ajustado para telas menores */
+            .phone-container {
+                max-width: 240px;
+            }
+            .phone-content {
+                width: 200px;
+                height: 350px;
             }
             .faq-title {
                 font-size: 2rem;
@@ -935,7 +953,6 @@
                 <nav class="nav">
                     <a href="#duvidas">DÚVIDAS</a>
                     <a href="#iptv" class="active">IPTV</a>
-                    <a href="#blog">BLOG</a>
                     <a href="#planos">PLANOS IPTV</a>
                     <a href="#renovacao">RENOVAÇÃO IPTV</a>
                 </nav>
@@ -956,7 +973,6 @@
     <div id="mobile-menu" class="mobile-menu">
         <a href="#duvidas" onclick="toggleMobileMenu()">DÚVIDAS</a>
         <a href="#iptv" class="active" onclick="toggleMobileMenu()">IPTV</a>
-        <a href="#blog" onclick="toggleMobileMenu()">BLOG</a>
         <a href="#planos" onclick="toggleMobileMenu()">PLANOS IPTV</a>
         <a href="#renovacao" onclick="toggleMobileMenu()">RENOVAÇÃO IPTV</a>
         <a href="#cliente" class="cta-button" onclick="toggleMobileMenu()">ÁREA DE CLIENTE</a>
@@ -988,9 +1004,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-image-container">
-                    <div class="hero-image-wrapper">
-                        <img src="https://z-cdn-media.chatglm.cn/files/44e3f005-3cf2-4a7c-a30e-a282600d30bd_coringa.png?auth_key=1789056199-8a12a7c5b9e64f70af1313f8a076aaf9-0-3ec66ea0864b565fab3561fd997c8233" alt="Coringa Dublado" class="hero-image">
+                <div class="hero-phone">
+                    <div class="phone-container">
+                        <div class="phone-screen">
+                            <div class="phone-content">
+                                <img src="https://fv5-4.files.fm/thumb_show.php?i=h4x8e8cnxg&view&v=1&PHPSESSID=de004ae7d57e95a040f030539685dfca5cb452b9" alt="TV BEST" class="phone-image">
+                            </div>
+                        </div>
+                        <div class="floating-1 floating-element"></div>
+                        <div class="floating-2 floating-element"></div>
                     </div>
                 </div>
             </div>
@@ -1442,7 +1464,7 @@
                     <h3 class="footer-title">Links Rápidos</h3>
                     <ul class="footer-links">
                         <li><a href="#cliente">Área do cliente</a></li>
-                        <li><a href="#player">Web Player</a></li>
+                        <li><a href="http://webtv.iptvsmarters.com" target="_blank">Web Player</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
