@@ -283,24 +283,21 @@
             color: #000;
             transform: scale(1.05);
         }
-        /* Imagem substituta do celular */
+        /* Imagem maior sem quadrado */
         .hero-image-container {
             position: relative;
             display: flex;
             justify-content: center;
             margin-top: 2rem;
-            max-width: 400px;
+            max-width: 600px; /* Aumentado para acomodar imagem maior */
             margin-left: auto;
             margin-right: auto;
         }
         .hero-image-wrapper {
-            background: linear-gradient(135deg, #374151, #111827);
-            padding: 1rem;
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: rotate(12deg);
             transition: transform 0.5s;
             max-width: 100%;
+            overflow: visible; /* Garante que a imagem não seja cortada */
         }
         .hero-image-wrapper:hover {
             transform: rotate(6deg);
@@ -308,8 +305,9 @@
         .hero-image {
             width: 100%;
             height: auto;
-            border-radius: 16px;
             display: block;
+            border-radius: 16px; /* Mantém bordas arredondadas na imagem */
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* Mantém sombra para destaque */
         }
         /* STREAMING LOGOS SECTION - Seção com logos de streaming */
         .streaming-section {
@@ -905,7 +903,7 @@
                 padding: 0.5rem;
             }
             .hero-image-container {
-                max-width: 300px;
+                max-width: 400px; /* Ajustado para telas menores */
             }
             .faq-title {
                 font-size: 2rem;
