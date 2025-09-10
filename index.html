@@ -290,103 +290,17 @@
             justify-content: center;
             margin-top: 2rem;
         }
-        .phone-container {
-            background: linear-gradient(135deg, #374151, #111827);
-            padding: 1rem;
+        .hero-phone img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
             border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: rotate(12deg);
             transition: transform 0.5s;
-            max-width: 280px;
         }
-        .phone-container:hover {
+        .hero-phone img:hover {
             transform: rotate(6deg);
-        }
-        .phone-screen {
-            background: #000;
-            border-radius: 16px;
-            padding: 8px;
-        }
-        .phone-content {
-            background: linear-gradient(180deg, #111827, #000);
-            border-radius: 12px;
-            padding: 1rem;
-            height: 400px;
-            width: 240px;
-        }
-        .phone-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
-        .phone-logo {
-            color: #00bcd4;
-            font-weight: bold;
-            font-size: 1.125rem;
-        }
-        .phone-indicator {
-            width: 24px;
-            height: 24px;
-            background: #00bcd4;
-            border-radius: 50%;
-        }
-        .phone-nav {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            color: #9ca3af;
-            margin-bottom: 1.5rem;
-        }
-        .phone-nav .active {
-            color: white;
-            border-bottom: 1px solid #00bcd4;
-            padding-bottom: 2px;
-        }
-        .phone-section {
-            margin-bottom: 1rem;
-        }
-        .phone-section-title {
-            color: white;
-            font-weight: 600;
-            font-size: 0.875rem;
-            margin-bottom: 0.75rem;
-        }
-        .phone-grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
-        .phone-grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.5rem;
-        }
-        .phone-card {
-            border-radius: 8px;
-            height: 64px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-        .phone-card.premiere {
-            background: #10b981;
-        }
-        .phone-card.espn {
-            background: #dc2626;
-        }
-        .phone-card.brasileirao {
-            background: #2563eb;
-        }
-        .phone-card.libertadores {
-            background: #eab308;
-        }
-        .phone-card.copa {
-            background: #10b981;
         }
         /* STREAMING LOGOS SECTION - Seção com logos de streaming */
         .streaming-section {
@@ -981,12 +895,8 @@
                 min-width: 100px;
                 padding: 0.5rem;
             }
-            .phone-container {
-                max-width: 240px;
-            }
-            .phone-content {
-                width: 200px;
-                height: 350px;
+            .hero-phone img {
+                max-height: 350px;
             }
             .faq-title {
                 font-size: 2rem;
@@ -1072,40 +982,7 @@
                     </div>
                 </div>
                 <div class="hero-phone">
-                    <div class="phone-container">
-                        <div class="phone-screen">
-                            <div class="phone-content">
-                                <div class="phone-header">
-                                    <div class="phone-logo">TV BEST</div>
-                                    <div class="phone-indicator"></div>
-                                </div>
-                                <div class="phone-nav">
-                                    <span class="active">Home</span>
-                                    <span>Canais</span>
-                                    <span>Filmes</span>
-                                    <span>Séries</span>
-                                    <span>Favoritos</span>
-                                </div>
-                                <div class="phone-section">
-                                    <div class="phone-section-title">Canais Esporte</div>
-                                    <div class="phone-grid-2">
-                                        <div class="phone-card premiere">PREMIERE</div>
-                                        <div class="phone-card espn">ESPN</div>
-                                    </div>
-                                </div>
-                                <div class="phone-section">
-                                    <div class="phone-section-title">Campeonatos</div>
-                                    <div class="phone-grid-3">
-                                        <div class="phone-card brasileirao">Brasileirão</div>
-                                        <div class="phone-card libertadores">Libertadores</div>
-                                        <div class="phone-card copa">Copa BR</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="floating-1 floating-element"></div>
-                        <div class="floating-2 floating-element"></div>
-                    </div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/0a500105-a812-4fb1-86f8-bd61b2ef44c2_logo%20cel.png?auth_key=1789054466-0e9b64839edd4d6d8fdbd6d5e7a2a272-0-96c0b0eec3993b0881bf33be2a6e6290" alt="TV BEST App">
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -1675,4 +1552,3 @@
     </script>
 </body>
 </html>
-
