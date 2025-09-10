@@ -283,24 +283,33 @@
             color: #000;
             transform: scale(1.05);
         }
-        /* Mobile Mockup - Simulação de aplicativo em um celular */
-        .hero-phone {
+        /* Imagem substituta do celular */
+        .hero-image-container {
             position: relative;
             display: flex;
             justify-content: center;
             margin-top: 2rem;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .hero-phone img {
-            max-width: 100%;
-            height: auto;
-            max-height: 500px;
+        .hero-image-wrapper {
+            background: linear-gradient(135deg, #374151, #111827);
+            padding: 1rem;
             border-radius: 24px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: rotate(12deg);
             transition: transform 0.5s;
+            max-width: 100%;
         }
-        .hero-phone img:hover {
+        .hero-image-wrapper:hover {
             transform: rotate(6deg);
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            display: block;
         }
         /* STREAMING LOGOS SECTION - Seção com logos de streaming */
         .streaming-section {
@@ -895,8 +904,8 @@
                 min-width: 100px;
                 padding: 0.5rem;
             }
-            .hero-phone img {
-                max-height: 350px;
+            .hero-image-container {
+                max-width: 300px;
             }
             .faq-title {
                 font-size: 2rem;
@@ -981,8 +990,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-phone">
-                    <img src="https://z-cdn-media.chatglm.cn/files/0a500105-a812-4fb1-86f8-bd61b2ef44c2_logo%20cel.png?auth_key=1789054466-0e9b64839edd4d6d8fdbd6d5e7a2a272-0-96c0b0eec3993b0881bf33be2a6e6290" alt="TV BEST App">
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="https://z-cdn-media.chatglm.cn/files/44e3f005-3cf2-4a7c-a30e-a282600d30bd_coringa.png?auth_key=1789056199-8a12a7c5b9e64f70af1313f8a076aaf9-0-3ec66ea0864b565fab3561fd997c8233" alt="Coringa Dublado" class="hero-image">
+                    </div>
                 </div>
             </div>
             <div class="scroll-indicator">
